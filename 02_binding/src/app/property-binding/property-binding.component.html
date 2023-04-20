@@ -1,0 +1,16 @@
+<h2>Property Binding</h2>
+<input [id]="myId" type='text' value="Vishwas">
+<input type='text' value="Vishwas" [disabled]="isDisabled" id="{{myId}}">
+<input type='text' value="Vishwas" bind-disabled="isDisabled" id="{{myId}}">
+
+<h2>Class Binding</h2>
+<h2 class="text-success">Codevolution</h2>
+<h2 [class]="textSuccess">Codevolution</h2>
+<h2 [class]="textSuccess" class="text-special">Codevolution</h2>
+<h2 [class.text-danger]="hasError">Codevolution</h2>
+
+<h2 [ngClass]="messageClasses">[ngCLass] example</h2>
+
+<h2 [style.color]="hasError ? 'red' : 'green'">Style Binding</h2>
+
+<h2 [ngStyle]="messageStyles">Style binding using directive</h2>

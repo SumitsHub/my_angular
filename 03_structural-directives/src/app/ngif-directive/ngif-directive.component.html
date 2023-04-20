@@ -1,0 +1,20 @@
+<h1>ngIf Directive</h1>
+
+<!-- Type 01 -->
+<h2 *ngIf="displayName; else elseBlock">
+    Codevolution
+</h2>
+
+<ng-template #elseBlock>
+    <h2>Hidden part</h2>
+</ng-template>
+
+<!-- Type 02 -->
+<div *ngIf="displayName; then thenBlock; else elseBlock"></div>
+<ng-template #thenBlock>
+    <h3>If Part</h3>
+</ng-template>
+
+<ng-template #elseBlock>
+    <h3>Else Part</h3>
+</ng-template>

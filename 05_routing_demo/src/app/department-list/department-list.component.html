@@ -1,0 +1,5 @@
+<h1>Department List</h1>
+
+<ul *ngFor="let dept of departments">
+    <li (click)="onDepartmentClick(dept)" [class.selected]="isSelected(dept)">{{dept.name}}</li>
+</ul>

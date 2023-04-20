@@ -1,0 +1,25 @@
+<h2>{{name}}</h2>
+
+<h2>{{name | lowercase}}</h2>
+<h2>{{name | uppercase}}</h2>
+<h2>{{message | titlecase}}</h2>
+<h3>{{name | slice:3}}</h3>
+<h3>{{name | slice:3:5}}</h3>
+
+<h3>{{person | json}}</h3>
+
+<h3>{{5.678 | number:'1.2-3'}}</h3>
+<h3>{{5.678 | number:'3.4-5'}}</h3>
+<h3>{{5.678 | number:'3.1-2'}}</h3>
+
+<h3>{{0.25 | percent}}</h3>
+
+<h3>{{0.25 | currency}}</h3>
+<h3>{{0.25 | currency: 'INR'}}</h3>
+<h3>{{0.25 | currency: 'INR' : 'code'}}</h3>
+
+<h3>{{date}}</h3>
+<h3>{{date | date: 'short'}}</h3>
+<h3>{{date | date: 'shortDate'}}</h3>
+<h3>{{date | date: 'shortTime'}}</h3>
+
